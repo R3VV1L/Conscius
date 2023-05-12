@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #217737;
+    color: #fff;
+    font-size: small;
+    border-radius: 15px;
+    margin: 10px;
+  }
