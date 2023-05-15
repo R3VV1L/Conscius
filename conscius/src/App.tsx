@@ -1,12 +1,12 @@
 import './App.css'
-import Header from './components/header/header';
+import Header from './components/header/Header';
 import { TreeStory } from './components/treeStory/TreeStory'
 
 function App() {
 
   const containerStyles = {
     width: "99vw",
-    height: "100vh"
+    height: "89vh"
 
   };
 
