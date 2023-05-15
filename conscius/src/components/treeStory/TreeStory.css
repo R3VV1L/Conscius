@@ -1,6 +1,4 @@
 .nodeTreeStory {
     margin: 0;
-    display: flex;
-    place-items: center;
-    min-height: 100vh;
+    z-index: 1000;
 }

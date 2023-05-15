@@ -1,25 +1,19 @@
 // @ts-nocheck
 import { Tree } from 'react-d3-tree';
 import './TreeStory.css'
+import { useEffect, useState } from 'react';
 
 export const TreeStory = () => {
     
-    // test data
-    const games = {
-        name: 'Minecraft',
-        children: [
-            {
-                name: 'PUBG',
-                children: [
-                    {
-                        name: 'Fortnite'
-                    }
-                ]
-            },
-        ]
-    }
+    const [data, setData] = useState([]);
 
-    console.log(games);
+    useEffect(() => {
+      fetch('http://localhost:8000')
+        .then(response => response.json())
+        .then(data => setData(data));
+    }, []);
+
+    console.log(data)
 
     return (
         <div       
@@ -28,7 +22,7 @@ export const TreeStory = () => {
           width: "100%",
           height: "100%",
         }}>
-            <Tree data={games}/>
+            {/* <Tree data={}/> */}
         </div>
     );
 }
