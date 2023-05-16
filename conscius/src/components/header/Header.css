@@ -2,10 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #217737;
-    color: #fff;
     font-size: small;
-    border-radius: 15px;
-    margin: 10px;
+    margin: 5px;
     z-index: 1001;
+
+    background-color: #000000;
+    color: #e5ff00;
+  }
+  h1 {
+    text-shadow: 2px 5px 4px #be141493, 0px -5px 5px #99be14, 11px 1px 4px #acacac8c;
+    margin: 5px;
   }

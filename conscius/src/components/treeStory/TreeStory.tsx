@@ -13,7 +13,8 @@ export const TreeStory = () => {
         .then(data => setData(data));
     }, []);
 
-    console.log(data)
+    const titleGame = data[3].map((filter) => filter.map((e) => e.game))
+    console.log(titleGame)
 
     return (
         <div       
@@ -22,7 +23,7 @@ export const TreeStory = () => {
           width: "100%",
           height: "100%",
         }}>
-            {/* <Tree data={}/> */}
+            <Tree data={titleGame}/>
         </div>
     );
 }
