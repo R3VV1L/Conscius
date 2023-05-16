@@ -1,29 +1,23 @@
-// @ts-nocheck
-import { Tree } from 'react-d3-tree';
+// @ts-ignore
+import rd3 from 'react-d3-library';
 import './TreeStory.css'
 import { useEffect, useState } from 'react';
 
 export const TreeStory = () => {
-    
-    const [data, setData] = useState([]);
 
-    useEffect(() => {
-      fetch('http://localhost:8000')
-        .then(response => response.json())
-        .then(data => setData(data));
-    }, []);
+  const [data, setData] = useState([]);
 
-    const titleGame = data[3].map((filter) => filter.map((e) => e.game))
-    console.log(titleGame)
+  useEffect(() => {
+    fetch('http://localhost:8000')
+      .then(response => response.json())
+      .then(data => setData(data));
+  }, []);
 
-    return (
-        <div       
-        id="treeWrapper"
-        style={{
-          width: "100%",
-          height: "100%",
-        }}>
-            <Tree data={titleGame}/>
-        </div>
-    );
+  console.log(data)
+
+  return (
+    <div>
+
+    </div>
+  );
 }

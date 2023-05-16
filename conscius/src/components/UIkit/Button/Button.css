@@ -1,0 +1,35 @@
+button {
+    padding: 0.4em 1em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    position: absolute;
+
+    width: 485px;
+    height: 123px;
+
+    border: 5px solid transparent;
+    background: #FAFF00;
+    border-radius: 195px;
+
+    color: #404040;
+    font-family: 'Bowlby One SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    border-color: #9eb15c;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto #FAFF00;
+}
