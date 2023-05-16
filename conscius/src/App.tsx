@@ -1,22 +1,20 @@
 import './App.css'
+import { Button } from './components/UIkit/Button/Button';
 import Header from './components/header/Header';
-import { TreeStory } from './components/treeStory/TreeStory'
 
 function App() {
 
-  const containerStyles = {
-    width: "99vw",
-    height: "89vh"
-
-  };
+  const handleClick = () => {
+    console.log('click')
+  }
 
   return (
-    <>
+    <div>
       <Header />
-      <div style={containerStyles}>
-        <TreeStory />
+      <div className='ButtonOnApp'>
+        <Button title='Start' onClick={handleClick} />
       </div>
-    </>
+    </div>
   )
 }
 
