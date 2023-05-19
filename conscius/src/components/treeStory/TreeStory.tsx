@@ -1,5 +1,3 @@
-// @ts-ignore
-import rd3 from 'react-d3-library';
 import './TreeStory.css'
 import { useEffect, useState } from 'react';
 

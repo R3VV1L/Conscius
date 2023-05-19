@@ -1,21 +1,15 @@
-import './App.css'
-import { Button } from './components/UIkit/Button/Button';
-import Header from './components/header/Header';
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import TreeStoryPage from './pages/TreeStoryPage/TreeStoryPage';
+import Home from './pages/Home/Home';
 
 function App() {
-
-  const handleClick = () => {
-    console.log('click')
-  }
-
-  return (
-    <div>
-      <Header />
-      <div className='ButtonOnApp'>
-        <Button title='Start' onClick={handleClick} />
-      </div>
-    </div>
-  )
+    return (
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/TreeStory' element={<TreeStoryPage />} />
+        </Routes>
+    );
 }
 
-export default App
+export default App;
