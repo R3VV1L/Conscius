@@ -1,11 +1,11 @@
 .header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 42px;
-    padding-left: 10px;
-    z-index: 1001;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 42px;
+  padding-left: 10px;
+  z-index: 1001;
 
-    background-color: #404040;
-    color: #FAFF00;
-  }
+  background-color: #404040;
+  color: #FAFF00;
+}

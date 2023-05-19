@@ -1,14 +1,10 @@
 button {
     padding: 0.4em 1em;
-    font-size: 1em;
     font-weight: 500;
     font-family: inherit;
     cursor: pointer;
     transition: border-color 0.25s;
     position: absolute;
-
-    width: 485px;
-    height: 123px;
 
     border: 5px solid transparent;
     background: #FAFF00;
@@ -18,7 +14,7 @@ button {
     font-family: 'Bowlby One SC';
     font-style: normal;
     font-weight: 400;
-    font-size: 42px;
+
     line-height: 64px;
     display: flex;
     justify-content: center;
@@ -32,4 +28,22 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto #FAFF00;
+}
+
+.button-small {
+    width: 121px;
+    height: 30px;
+    font-size: 10px;
+}
+
+.button-medium {
+    width: 242px;
+    height: 61px;
+    font-size: 21px;
+}
+
+.button-large {
+    width: 485px;
+    height: 123px;
+    font-size: 42px;
 }
