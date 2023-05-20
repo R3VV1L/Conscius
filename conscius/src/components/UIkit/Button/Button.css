@@ -7,7 +7,7 @@ button {
     position: absolute;
 
     border: 5px solid transparent;
-    background: #FAFF00;
+    background: #faff00;
     border-radius: 195px;
 
     color: #404040;
@@ -27,7 +27,7 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-    outline: 4px auto #FAFF00;
+    outline: 4px auto #faff00;
 }
 
 .button-small {
