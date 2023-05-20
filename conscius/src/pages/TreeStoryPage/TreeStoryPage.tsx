@@ -4,7 +4,7 @@ const TreeStoryPage = () => {
     return (
         <div>
             <Header />
-            <h1 className='comingSoon'>coming soon . . .</h1>
+            <h1 className="comingSoon">coming soon . . .</h1>
         </div>
     );
 };

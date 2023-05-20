@@ -12,8 +12,8 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <div className='ButtonOnApp'>
-                <Button title='Start' size='large' onClick={handleClick} />
+            <div className="ButtonOnApp">
+                <Button title="Start" size="large" onClick={handleClick} />
             </div>
         </div>
     );
