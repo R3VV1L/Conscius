@@ -30,3 +30,12 @@ body {
   align-items: center;
   margin: 25%;
 }
+
+.comingSoon {
+  cursor: wait;
+  opacity: 0.1;
+}
+
+.comingSoon:hover {
+  opacity: 0.5;
+}

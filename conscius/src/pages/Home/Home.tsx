@@ -1,9 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 import { Header } from '../../components/header/Header';
 import { Button } from '../../components/UIkit/Button/Button';
 
 const Home = () => {
+    const navigate = useNavigate();
+
     const handleClick = () => {
-        console.log('click');
+        navigate('/TreeStory');
     };
 
     return (

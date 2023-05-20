@@ -9,3 +9,13 @@
   background-color: #404040;
   color: #FAFF00;
 }
+
+.link {
+  color: #FAFF00;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #FAFF00;
+  text-decoration: none;
+}
