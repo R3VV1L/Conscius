@@ -1,10 +1,11 @@
 import { Header } from '../../components/header/Header';
+import { Arhe } from '../../components/Arhe/Arhe.tsx';
 
 const TreeStoryPage = () => {
     return (
         <div>
             <Header />
-            <h1 className="comingSoon">coming soon . . .</h1>
+            <Arhe />
         </div>
     );
 };

@@ -7,15 +7,15 @@ const SelectGenreGamesFilter = require("../database/db.js");
 class PostServices {
   async showAll() {
     try {
-      let game = await Game.findAll();
-      let genre = await Genre.findAll();
-      let genregames = await GenreGame.findAll();
-      let genregamesfilter = await SelectGenreGamesFilter.query('SELECT * FROM `genregamefilters`')
-      return [game, genre, genregames, genregamesfilter];
-    } catch (err) {
-      console.log(
-        err
+      // let game = await Game.findAll();
+      // let genre = await Genre.findAll();
+      // let genregames = await GenreGame.findAll();
+      let genregamesfilter = await SelectGenreGamesFilter.query(
+        "SELECT * FROM `genregamefilters`"
       );
+      return [/*game, genre, genregames,*/ genregamesfilter];
+    } catch (err) {
+      console.log(err);
     }
   }
 }
