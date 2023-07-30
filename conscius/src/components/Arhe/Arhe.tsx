@@ -11,8 +11,11 @@ export const Arhe = () => {
             .then((response) => response.json())
             .then((data) => setData(data));
     }, []);
-
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
     const genre = data.flat(2).map((item) => item.genre);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
     const game = data.flat(2).map((item) => item.game);
     //добавить филтрацию по жанру
     const myTreeData = [
