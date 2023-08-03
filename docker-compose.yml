@@ -2,14 +2,14 @@ version: '3'
 
 services:
   frontend:
-    build: ./frontend
+    build: ./conscius
     ports:
       - "5173:3000"
     depends_on:
       - backend
 
   backend:
-    build: ./backend
+    build: ./consciusServer
     ports:
       - "5172:5000"
     environment:
