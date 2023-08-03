@@ -30,4 +30,4 @@ services:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=conscius
     ports:
-      - "3306:3306"
+      - "3307:3306"
