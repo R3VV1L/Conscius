@@ -2,6 +2,7 @@ version: '3'
 
 services:
   conscius:
+    image: node
     build: ./conscius
     ports:
       - "5173:3000"
@@ -9,6 +10,7 @@ services:
       - consciusServer
 
   consciusServer:
+    image: node
     build: ./consciusServer
     ports:
       - "5172:5000"
